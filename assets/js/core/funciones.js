@@ -27,11 +27,11 @@ function buildImagePortfolio(portfolioContainer, url, index) {
 
 var lista=[0,1,2,3,4,5,6,7,8,9,10,11];
 
-let shuffledLista = lista.sort(function () {
+let listaDesordenada = lista.sort(function () {
   return Math.random() - 0.5;
 });
 
-for (let i of shuffledLista) {
+for (let i of listaDesordenada) {
   var url = "assets/img/imagen" + i + ".jpeg";
   buildImagePortfolio(portfolioContainer, url, i)
 }
